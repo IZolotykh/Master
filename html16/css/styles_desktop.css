@@ -1,0 +1,669 @@
+/*ДЗ № 16 - Золотых Илья */
+
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Titillium Web', sans-serif;
+
+}
+
+.background {
+  background: url("../img/imgonline-com-ua-AutoEnrich-wfNWlP6gR9nvUW.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.background_shadow {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.head {
+  height: 60px;
+  width: 100%;
+  border-bottom: 1px solid #A3A3A3;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.burger_menu {
+  margin-left: 20px;
+  display: block;
+  height: 20px;
+  width: 20px;
+}
+
+.burger_menu img {
+  max-width: 100%;
+}
+
+.head_menu {
+  height: 56px;
+  border-bottom: 4px solid #FFF;
+}
+
+.logo, .topmenu {
+  display: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.topmenu_mobile {
+  margin-top: 18px;
+}
+
+.topmenu_mobile a {
+  color: #FFF;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.search {
+  height: 60px;
+  border-left: 1px solid #A3A3A3;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.search_ico {
+  margin: 0 10px;
+  width: 10px;
+  height: 10px;
+}
+
+.search_ico img {
+  max-width: 100%;
+}
+
+.search_form {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #FFFFFF;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 13px;
+}
+
+.scnd_container {
+  margin-left: 20px;
+  margin-top: 20px;
+  display: flex;
+  flex-flow: column;
+  justify-content: start;
+}
+
+.header {
+  color: #fff;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header p {
+  line-height: 1.2em;
+  }
+
+.buttons {
+  margin-top: 15px;
+  display: flex;
+  flex-flow: column;
+  justify-content: start;
+}
+
+.group {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: start;
+  align-items: center;
+}
+
+.button {
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+}
+
+.button img {
+  max-width: 100%;
+}
+
+.button_txt {
+  color: #F6F6F6;
+  font-size: 15px;
+}
+
+.top {
+  color: #F6F6F6;
+  font-size: 15px;
+}
+
+.bottom {
+  color: #F6F6F6;
+  font-size: 17px;
+}
+
+.bottom img {
+  margin-right: 10px;
+  height: 15px;
+  width: 15px;
+}
+
+.info {
+  margin-top: 12px;
+}
+
+.column:last-of-type {
+  padding-bottom: 17px;
+}
+
+.form {
+  background-color: #1F1F2F;
+  width: 100%;
+}
+
+.form_container {
+  margin: 0px 20px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.form_text {
+  padding-top: 30px;
+  font-size: 17px;
+  color: #FFF;
+  text-align: left;
+}
+
+#loginform {
+max-width: 280px;
+}
+
+.name, .email {
+  margin-top: 20px;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 17px;
+  color: #82868E;
+  border-radius: 10px;
+  border: none;
+  padding: 9px 71px 9px 35px;
+}
+
+.email {
+  background: url("../img/email.png") no-repeat 10px #FFFFFF;
+}
+
+.name {
+  background: url("../img/user.png") no-repeat 10px #FFFFFF;
+}
+
+button {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  width: 280px;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 17px;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 10px;
+  border: none;
+  background: #F92251;
+  padding: 8px 24px;
+  cursor: pointer;
+}
+
+.container_foot {
+  width: 100%;
+  background-color: #404754;
+}
+
+.foot_menus {
+  padding: 16px 20px;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  font-size: 17px;
+  color: #BAC5D3;
+}
+
+.foot_menus a {
+  color: #BAC5D3;
+  font-size: 17px;
+}
+
+.foot_bottom {
+  margin-top: 18px;
+}
+
+@media (min-width: 767px) {
+
+  .background {
+    background: url("../img/motorcycle_enduro_cross-1440x810.jpg");
+    background-repeat: no-repeat;
+  }
+  
+  .background_shadow {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .container {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .wrapper {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    box-sizing: border-box;
+  }
+  
+  .burger_menu {
+    margin-left: 20px;
+    margin-right: 40px;
+    display: block;
+    height: 40px;
+    width: 40px;
+  }
+  
+  .burger_menu img {
+    max-width: 100%;
+  }
+  
+  .logo, .topmenu {
+    display: none;
+  }
+  
+  .topmenu_mobile {
+    margin-top: 20px;
+  }
+  
+  .topmenu_mobile a {
+    color: #FFF;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+  }
+  
+  .search {
+    margin-left: 45px;
+    height: 60px;
+    border-left: 1px solid #A3A3A3;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+  }
+  
+  .search_ico {
+    margin-left: 40px;
+    width: 20px;
+    height: 20px;
+  }
+  
+  .search_ico img {
+    max-width: 100%;
+  }
+  
+  .search_form {
+    margin-left: 25px;
+    font-size: 14px;
+  }
+  
+  .scnd_container {
+    margin-left: 93px;
+    margin-top: 52px;
+    display: flex;
+    flex-flow: column;
+    justify-content: start;
+  }
+  
+  .header {
+    color: #fff;
+    font-size: 90px;
+    max-width: 500px;
+    max-height: 300px;
+  }
+
+  .buttons {
+    margin-top: 30px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+  }
+  
+  .button {
+    margin-right: 22px;
+    height: 50px;
+    width: 50px;
+  }
+  
+  .button img {
+    max-width: 100%;
+  }
+  
+  .button_txt {
+    color: #F6F6F6;
+    font-size: 18px;
+    margin-right: 51px;
+  }
+  
+  .info {
+    margin-top: 80px;
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 516px;
+    justify-content: space-between;
+  }
+
+  .column:last-of-type {
+    padding-top: 18px;
+    padding-bottom: 91px;
+  }
+  
+  .top {
+    color: #F6F6F6;
+    font-size: 18px;
+  }
+  
+  .bottom {
+    color: #F6F6F6;
+    font-size: 24px;
+  }
+  
+  .bottom img {
+    margin-right: 15px;
+    width: 25px;
+    height: 22px;
+  }
+  
+  .bottom img:last-child {
+    margin-right: 35px;
+  }
+  
+  .form {
+    background-color: #1F1F2F;
+    width: 100%;
+  }
+  
+  .form_container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+  
+  .form_text {
+    font-size: 25px;
+    color: #FFF;
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  #loginform {
+    margin-top: 53px;
+    display: flex;
+    max-width: 450px;
+    flex-flow: row wrap;
+    }
+
+  .name, .email {
+    margin-top: 0px;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 17px;
+    color: #82868E;
+    border-radius: 10px;
+    border: none;
+    padding: 12px 0 12px 35px;
+   }
+  
+  .email {
+    background: url("../img/email.png") no-repeat 10px #FFFFFF;
+  }
+  
+  .name {
+    background: url("../img/user.png") no-repeat 10px #FFFFFF;
+    margin-right: 30px;
+  }
+  
+  button {
+    margin-top: 50px;
+    width: 100%;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 17px;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    background: #F92251;
+    padding: 12px 25px;
+    cursor: pointer;
+  }
+  
+  .container_foot {
+    width: 100%;
+    max-height: 130px;
+    background-color: #404754;
+  }
+  
+  .foot_menus {
+    padding: 30px 30px;
+    display: flex;
+    flex-flow: column;
+    justify-content: start;
+  }
+
+  .foot_column > ul > li{
+    display: inline-block;
+  }
+
+  .foot_column > ul > li {
+    margin-right: 30px;
+  }
+
+  .foot_column > ul > li:last-child {
+    margin-right: 0px;
+  }
+
+}
+
+@media (min-width:992px) {
+
+  .background {
+    background-size: 100%;
+  }
+
+  .head {
+    height: 80px;
+    width: 100%;
+    border-bottom: 1px solid #A3A3A3;
+  }
+  
+  .wrapper {
+    height: 80px;
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+  }
+  
+  .head_menu {
+    height: 100%;
+    border-bottom: none;
+  }
+
+  .burger_menu {
+  display: none;
+  }
+    
+  .topmenu_mobile {
+    display: none;
+  }
+  
+  .logo {
+    height: 80px;
+    width: 65px;
+    display: inline-block;
+  }
+
+  .logo img {
+    height: auto;
+    width: 100%;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .topmenu {
+    padding-top: 24px;
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+
+  .topmenu > ul > li {
+    display:inline-block;
+    margin-right: 110px; 
+  }
+  
+  .topmenu > ul > li:last-child {
+    margin-right: 0px;  
+  }
+
+  .topmenu a {
+    color: #9F9F9F;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+  }
+
+  .topmenu a:hover {
+    padding-bottom: 26px;
+    color: #fff;
+    border-bottom: 4px solid #fff;
+  }
+  
+  .search {
+    height: 80px;
+    width: 450px;
+    margin-left: 0;
+  }
+  
+  .search_ico {
+    margin: 10px 30px 10px 40px;
+    width: 20px;
+    height: 20px;
+  }
+  
+  .search_ico img {
+    max-width: 100%;
+  }
+  
+  .search_form {
+    font-size: 14px;
+  }
+  
+  .scnd_container {
+    margin-left: 216px;
+    margin-top: 80px;
+  }
+  
+  .header {
+    font-size: 90px;
+    font-weight: bold;
+  }
+  
+  .buttons {
+    margin-top: 50px;
+  }
+  
+  .info {
+    max-width: 860px;
+    justify-content: space-between;
+  }
+
+  .top {
+    color: #F6F6F6;
+    font-size: 18px;
+  }
+  
+  .bottom {
+    color: #F6F6F6;
+    font-size: 24px;
+  }
+  
+  .bottom img {
+    margin-right: 15px;
+  }
+  
+  .bottom img:last-child {
+    margin-right: 35px;
+  }
+
+  .column:last-of-type {
+    padding-top: 0px;
+    padding-bottom: 280px;
+  }
+  
+  .form_text {
+    padding-top: 0px;
+    margin-top: 60px;
+    font-size: 35px;
+    max-width: 750px;
+   }
+  
+  #loginform {
+    margin-top: 40px;
+    max-width: 980px;
+    padding-bottom: 90px;
+  }
+
+  .name, .email {
+    width: 265px;
+    margin-right: 40px;
+   }
+  
+  button {
+    width: 300px;
+    margin: 0;
+  }
+  
+  .container_foot {
+    width: 100%;
+    background-color: #404754;
+  }
+  
+  .foot_menus {
+    padding: 20px 40px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+
+  .foot_menus a {
+    font-size: 20px;
+  }
+
+  .foot_bottom {
+    font-size: 20px;
+    margin: 0;
+  }
+}
