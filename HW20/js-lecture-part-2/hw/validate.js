@@ -12,8 +12,8 @@ function validate(data) {
     } else if (!license) {
         alert('Необходимо согласие');
     } else if (gender == "male"){
-        alert('Уважаемый ' + firstName + ', заявка создана');
+        alert(`Уважаемый ${firstName}, заявка создана`);
     } else {
-        alert('Уважаемая ' + firstName + ', заявка создана');
+        alert(`Уважаемая ${firstName}, заявка создана`);
     }
 }
