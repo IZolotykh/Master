@@ -1,0 +1,541 @@
+/*ДЗ № 12 - Золотых Илья */
+
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+
+.background {
+  background-color: #2B2835;
+  width: 100%;
+}
+
+.layer{
+margin: 0 auto;
+max-width: 1240px;
+display: flex;
+align-items: center;
+justify-content: flex-end;
+position: relative;
+}
+
+.text_banner {
+  padding: 210px 0 180px;
+  max-width: 510px;
+  width: 100%;
+}
+
+.bitmap {
+position: absolute;
+top: 0;
+left: -222px;
+}
+
+.subtitle, .title, .price, .button, .bottomtitle {
+  font-family: 'Roboto', sans-serif;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #fff;
+}
+
+.title, .price {
+  font-weight: 500;
+  font-size: 40px;
+  color: #fff;
+}
+
+.price_box {
+padding-top: 40px;
+display: flex;
+align-items: center;
+justify-content: flex-start;
+}
+
+.price {
+  padding-right: 34px;
+}
+
+.button {
+padding: 12px 58px;
+border: none;
+outline: none;
+border-radius: 20px;
+font-size: 14px;
+color: #000000;
+background-color: #ffc700;
+cursor: pointer;
+text-transform: uppercase;
+font-weight: 500;
+}
+
+.bottomtitle {
+  color: #ffc700;
+  font-size: 13px;
+}
+
+
+.scnd_background {
+  background-color: #fff;
+  width: 100%;
+}
+
+.scnd_banner_layer {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  }
+
+  .scnd_banner_layer > .text_banner {
+    padding: 120px 0 170px;
+    max-width: 510px;
+    width: 100%;
+  }
+  
+  .bitmap_column {
+  position: relative;    
+  }
+
+  .scnd_subtitle {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #2B2835;
+  }
+  
+.text_color {
+  font-family: 'Roboto', sans-serif;
+  font-size: 40px;
+  color: #2B2835;
+  line-height: 55px;
+}
+
+.find_color {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #2B2835;
+  line-height: 20px;
+}
+
+.oval {
+  width: 40px;
+  height: 40px;
+  margin-right: 14px;
+  display: inline-block;
+}
+
+.oval:last-child {
+  margin-right: 0px;
+}
+
+.radio_wht {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	margin: 10px 0 0 7px;
+}
+.radio_wht + label {
+	position: relative;
+	padding: 0 0 0 35px;
+  cursor: pointer;
+  
+}
+.radio_wht + label:before {
+	content: '';
+	position: absolute;
+	top: 1px;
+	left: 4px;
+	width: 37px;
+	height: 37px;
+	border: 1px solid #EAEAEA;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.135817);
+}
+
+.radio_wht + label:after {
+	content: '';
+	position: absolute;
+	top: 1px;
+	left: 4px;
+	width: 37px;
+	height: 37px;
+	border-radius: 50%;
+  opacity: 0;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.135817);
+}
+.radio_wht:checked + label:after {
+	opacity: 1;
+}
+
+.radio_wht:focus + label:before {
+	box-shadow: 0 0 0 1px rgba(0,0,0,.7);
+}
+
+.radio_red {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	margin: 10px 0 0 7px;
+}
+.radio_red + label {
+	position: relative;
+	padding: 0 0 0 35px;
+  cursor: pointer;
+  
+}
+.radio_red + label:before {
+	content: '';
+	position: absolute;
+	top: 1px;
+	left: 4px;
+	width: 37px;
+	height: 37px;
+	border: 1px solid #EAEAEA;
+  border-radius: 50%;
+  background: #DD5656;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.135817);
+}
+
+.radio_red + label:after {
+	content: '';
+	position: absolute;
+	top: 1px;
+	left: 4px;
+	width: 37px;
+	height: 37px;
+	border-radius: 50%;
+  opacity: 0;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.135817);
+}
+.radio_red:checked + label:after {
+	opacity: 1;
+}
+
+.radio_red:focus + label:before {
+	box-shadow: 0 0 0 1px rgba(0,0,0,.7);
+}
+
+.radio_blck {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	margin: 10px 0 0 7px;
+}
+.radio_blck + label {
+	position: relative;
+	padding: 0 0 0 35px;
+  cursor: pointer;
+  
+}
+.radio_blck + label:before {
+	content: '';
+	position: absolute;
+	top: 1px;
+	left: 4px;
+	width: 37px;
+	height: 37px;
+	border: 1px solid #EAEAEA;
+  border-radius: 50%;
+  background: #000;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.135817);
+}
+
+.radio_blck + label:after {
+	content: '';
+	position: absolute;
+	top: 1px;
+	left: 4px;
+	width: 37px;
+	height: 37px;
+	border-radius: 50%;
+  opacity: 0;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.135817);
+}
+
+.radio_blck:checked + label:after {
+	opacity: 1;
+}
+
+.radio_blck:focus + label:before {
+	box-shadow: 0 0 0 1px rgba(0,0,0,.7);
+}
+
+.dots {
+  position: absolute;
+  top: 614px;
+  left: 348px;
+}
+
+.dot {
+ 
+  margin-right: 14px;
+  display: inline-block;
+}
+
+.dot:last-child {
+  margin-right: 0px;
+}
+
+.radio_dot {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+
+.radio_dott {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+
+.radio_dottt {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+
+.radio_dot + label {
+	position: relative;
+	padding: 0 0 0 15px;
+	cursor: pointer;
+}
+
+.radio_dott + label {
+	position: relative;
+	padding: 0 0 0 15px;
+	cursor: pointer;
+}
+
+.radio_dottt + label {
+	position: relative;
+	padding: 0 0 0 15px;
+	cursor: pointer;
+}
+
+.radio_dot + label:before {
+	content: '';
+	position: absolute;
+	top: 1px;
+	left: 4px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: #D1D1D1;
+}
+
+.radio_dott + label:before {
+	content: '';
+	position: absolute;
+	top: 1px;
+	left: 4px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: #D1D1D1;
+}
+
+.radio_dottt + label:before {
+	content: '';
+	position: absolute;
+	top: 1px;
+	left: 4px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: #D1D1D1;
+}
+
+.radio_dot + label:after {
+	content: '';
+	position: absolute;
+	top: 1px;
+	left: 4px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	opacity: 0;    
+}
+
+.radio_dott + label:after {
+	content: '';
+	position: absolute;
+	top: 1px;
+	left: 4px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	opacity: 0;    
+}
+
+.radio_dottt + label:after {
+	content: '';
+	position: absolute;
+	top: 1px;
+	left: 4px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	opacity: 0;    
+}
+
+.radio_dot:focus + label:before {
+    background: #000;
+}
+
+.radio_dott:focus + label:before {
+  background: #000;
+}
+
+.radio_dottt:focus + label:before {
+  background: #000;
+}
+
+.wrap_title {
+display: flex;
+}
+
+.cross {
+  position: absolute;
+  top: 210px;
+  left: 210px;
+}
+
+.wrap_title>.title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 50px;
+  color: #2B2835;
+}
+
+.scnd_banner_layer > .text_banner > .price_box > .price {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  color: #000;
+  line-height: 49px;
+  padding-right: 43px;
+}
+
+.black_button {
+  padding: 12px 48px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #000;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.scnd_bottomtitle {
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  color: #000;
+}
+
+.banner_next {
+  width: 100%;
+  margin-bottom: 69px;
+}
+
+.banner_container {
+  margin-right: 93px;
+  margin-left: 93px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.block {
+  width: 393px;
+  height: 560px;
+  margin-right: 37px;
+  background-color: #F8F8F9;
+  position: relative;
+}
+
+.bitmap_frst {
+  position: absolute;
+  left: 102px;
+  top: 40px;
+  z-index: 1;
+  
+}
+
+.bitmap_scnd {
+  position: absolute;
+  left: 55px;
+  top: -17px;
+  z-index: 1;
+}
+
+.bitmap_thrd {
+  position: absolute;
+  left: 124px;
+  top: 100px;
+  z-index: 1;
+}
+
+.title_block {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 50px;
+  color: #2B2835;
+}
+
+.text_banner_thrd {
+  max-width: 267px;
+  position: absolute;
+  top: 360px;
+  left: 49px;
+  z-index: 5;
+}
+
+.lasttext_banner {
+  max-width: 267px;
+  position: absolute;
+  top: 420px;
+  left: 49px;
+  z-index: 5;
+}
+
+.text_block {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: #030303;
+}
+
+.price_block {
+padding-top: 21px;
+display: flex;
+align-items: center;
+justify-content: flex-start;
+box-sizing: border-box;
+}
+
+.price_block > .price {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  color: #9D8220;
+}
+
+.price_block > .black_button {
+  padding: 12px 33px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #000;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 500;
+}

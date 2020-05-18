@@ -1,0 +1,104 @@
+/*ДЗ № 14 - Золотых Илья */
+
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+font-size: 35px;
+font-weight: 700;
+margin-bottom: 30px;
+}
+
+h3 {
+font-size: 15px;
+font-weight: bold;
+color: #5D5D5D;
+}
+
+p {
+font-size: 13px;
+color: #5D5D5D;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.line {
+  font-size: 0;
+  position: relative;
+}
+
+.line::before {
+  content: '';
+  left: -10px;
+  background-color: #0179FF;
+  width: 2px;
+  height: 90%;  
+  position: absolute;
+}
+
+.line>input[type="checkbox"] {
+  display: none;
+}
+
+.line>div {
+  display: none;
+  padding: 10px 15px;
+  border: 1px solid rgba(0, 0, 0, 0.09);
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  background-color: #FFF;
+}
+
+#tab-btn-1:checked~#content,
+#tab-btn-2:checked~#content,
+#tab-btn-3:checked~#content {
+  display: block;
+}
+
+.line>label {
+  display: block;
+  text-align: left;
+  user-select: none;
+  background-color: #F5F5F5;
+  border: 1px solid rgba(0, 0, 0, 0.09);
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 15px 35px;
+  font-size: 13px;
+  line-height: 15px;
+  cursor: pointer;
+  position: relative;
+}
+
+label::before {
+  content: '';
+  position: absolute;
+  left: 10px; 
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  transition: all .3s;
+  border-left: 2px solid #000;
+  border-bottom: 2px solid #000;
+  transform: rotate(-135deg);
+}
+
+.line>input[type="checkbox"]:checked + label::before {
+  transform: rotate(-45deg);
+  left: 15px;
+  top: 15px;
+}
