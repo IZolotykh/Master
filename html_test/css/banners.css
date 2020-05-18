@@ -1,0 +1,230 @@
+/*Тестовое задание HTML - Золотых Илья*/
+
+.banner_header {
+  background-color: #D8D8D8;
+  width: 100%;
+  height: 450px;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+}
+
+.header {
+margin-top: 120px;
+margin-left: 130px;
+box-sizing: border-box;
+}
+
+.buttons {
+margin-top: 30px;
+margin-left: 130px;
+box-sizing: border-box;
+}
+
+h1 {
+  font-size: 60px;
+  line-height: 76px;
+  color: #000;
+}
+
+h2 {
+  font-size: 36px;
+  line-height: 46px;
+  color: #000;
+}
+
+button {
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  font-family: 'Abel', sans-serif;
+  font-size: 26px;
+  line-height: 33px;
+  cursor: pointer;
+  padding: 14px 78px;
+}
+  
+.wht_button {
+  color: #000;
+  background-color: #fff;
+  margin-right: 25px;
+}
+  
+.blck_button {
+  color: #fff;
+  background-color: #000;
+}
+
+.articles {
+  background-color: #fff;
+  width: 100%;
+}
+
+.articles > .wrapper {
+  padding: 0;
+  margin: 0 130px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.column {
+  padding: 80px 0;
+}
+
+.block {
+  background-color: #D8D8D8;
+  width: 380px;
+  height: 244px;
+}
+
+.column > .header {
+  margin: 0;
+}
+
+.column > .text {
+  max-width: 380px;
+  font-size: 18px;
+  line-height: 30px;
+  color: #1C1E20;
+  padding-bottom: 40px;
+}
+
+h3 {
+  font-size: 30px;
+  line-height: 38px;
+  color: #1C1E20;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.column > a {
+  display: block;
+  max-width: 100px;
+  font-size: 18px;
+  line-height: 23px;
+  color: #787878;
+  text-decoration: none;
+}
+
+.sign_up {
+  background-color: #D8D8D8;
+  width: 100%;
+}
+
+.sign_up > .wrapper {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.header_sign {
+  margin-top: 130px;
+}
+
+.header_sign > h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 35px;
+  line-height: 47px;
+  letter-spacing: 4.375px;
+  color: #1C1E20;
+}
+
+.field {
+  margin-top: 30px;
+  margin-bottom: 130px;
+}
+
+.f_text {
+  position: relative;
+  width: 700px;
+  height: 60px;
+}
+
+.inp_text {
+  width: 100%;
+  padding: 15px 20px;
+  outline: none;
+  background: #ffffff;
+  font-family: 'Abel', sans-serif;
+  color: #787878;
+  font-size: 26px;
+  line-height: 30px;
+  border: none;
+  box-sizing: border-box;
+}
+.f_text > .blck_button {
+  position: absolute;
+  top: 0;
+  height: 60px;
+  right: 0px;
+  padding: 15px 94px;
+  border: none;
+  background: #000;
+  cursor: pointer;
+  font-family: 'Abel', sans-serif;
+  color: #ffffff;
+  font-size: 26px;
+  line-height: 33px;
+}
+
+.articles > .container {
+  margin-left: 125px;
+  margin-right: 125px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.article {
+  margin-top: 80px;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.article_rew {
+  margin-top: 80px;
+  display: flex;
+  flex-flow: row-reverse nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.article > .block {
+  width: 588px;
+  height: 386px;
+}
+
+.article_rew > .block {
+  width: 588px;
+  height: 386px;
+}
+
+.article > .text {
+  text-align: right;
+  height: 140px;
+  max-width: 540px;
+  margin-right: 60px;
+  box-sizing: border-box;
+}
+
+.article_rew > .text {
+  height: 140px;
+  max-width: 540px;
+  margin-left: 60px;
+  box-sizing: border-box;
+}
+
+.button {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  box-sizing: border-box;
+}

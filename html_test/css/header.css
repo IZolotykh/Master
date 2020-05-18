@@ -1,0 +1,52 @@
+/*Тестовое задание HTML - Золотых Илья*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Abel', sans-serif;
+}
+
+.container_menu {
+  background-color: #ffffff;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.container_menu > .wrapper {
+  padding: 17px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+  .logo {
+    height: 55px;
+    width: 55px;
+  }
+
+  .logo img {
+    height: auto;
+    width: 100%;
+  }
+
+  .menu {
+    background-color: #D8D8D8;
+    width: 154px;
+    height: 31px;
+  }
+
+  ul {
+    list-style: none;
+  }
+  
+  ul > li {
+    display:inline-block;
+  }
+  
+  ul > li:not(:last-child) {
+    margin-right: 40px;
+  }
