@@ -1,8 +1,5 @@
 /*Тестовое задание HTML - Золотых Илья*/
 
-@charset "utf-8";
-@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
-
 footer {
   background-color: #D8D8D8;
   width: 100%;
@@ -37,17 +34,13 @@ footer {
   height: 31px;
   margin-top: 30px;
   margin-bottom: 30px;
- }
+}
 
 .foot_social {
   margin-top: 80px;
   margin-bottom: 100px;
 }
 
-.foot_social a {
+.foot_social a:not(:last-child) {
   margin-right: 50px;
-}
-
-.foot_social a:last-child {
-  margin-right: 0px;
 }
