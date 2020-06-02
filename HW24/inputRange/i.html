@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="i.css">
+</head>
+
+<body>
+<div class="wrapper">
+  <p>Кручу-верчу, input range научиться хочу!</p>
+
+  <div>
+    <input type="range" id="rotate" name="rotate"
+    min = "-360" max = "360" value = "0" oninput = "rotate(this.value)">
+    <label for="rotate">Крутилка</label>
+  </div>
+  
+  <div>
+    <input type="range" id="size" name="size" 
+           min="0" max="500" value="50" step="10" oninput = "change()">
+    <label for="size">Увеличивалка</label>
+  </div>
+
+  <div id="testBlock"></div>
+</div>
+
+<script src="i.js"></script>
+
+</body>
+</html>

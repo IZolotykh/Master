@@ -1,0 +1,30 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.wrapper {
+  margin-top: 10%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+p,
+label {
+    font: 1rem 'Roboto', sans-serif;
+}
+
+input {
+    margin: .4rem;
+}
+
+#testBlock {
+  margin-top: 5%;
+  height: 200px;
+  width: 200px;
+  background-color: cornflowerblue;
+  border-radius: 10px;
+  box-shadow: darkslateblue 2px 2px 3px;
+  transform : rotate(0deg); /* устанавливаем, что двухмерный поворот отсутствует */
+  -webkit-transform : rotate(0deg);  /* для поддержки ранних версий браузеров */ 
+  -ms-transform : rotate(0deg);  /* для поддержки ранних версий браузеров */ 
+}
