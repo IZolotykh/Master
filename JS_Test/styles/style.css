@@ -1,0 +1,272 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Abel', sans-serif;
+  font-weight: normal;
+  outline: none;
+}
+
+body {
+  background-color: #282828;
+  position: relative;
+}
+
+.wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  max-width: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 60px 0;
+}
+
+.wrapper h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 58px;
+  line-height: 91px;
+  color: white;
+  padding: 0 40px;
+}
+
+.wrapper .mssgBlock {
+  border: 1px solid #EDEDED;
+  border-radius: 37px;
+  padding: 0 40px;
+  padding-bottom: 120px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-height: 80%;
+  position: relative;
+}
+
+.wrapper .mssgBlock .scrollBlock {
+  position: absolute;
+  width: 21px;
+  height: 100%;
+  background-color: #282828;
+  top: 0;
+  right: 38px;
+}
+
+.wrapper .mssgBlock .chatContainer {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  overflow-y: auto;
+  position: relative;
+  padding-right: 23px;
+}
+
+.wrapper .mssgBlock .chatContainer .mssgScreen {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.wrapper .mssgBlock .chatContainer .test {
+  background: #929292;
+  height: 100%;
+}
+
+.wrapper .mssgBlock .chatContainer .test .scroll {
+  background: #c96262;
+  height: 450px;
+}
+
+.wrapper .mssgBlock .chatContainer .message {
+  min-height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 15px 0;
+}
+
+.wrapper .mssgBlock .chatContainer .message .avatar {
+  min-width: 70px;
+  height: 70px;
+  border-radius: 50px;
+  margin-right: 20px;
+}
+
+.wrapper .mssgBlock .chatContainer .message .text {
+  border-radius: 35px;
+  padding: 10px 30px;
+  min-height: 70px;
+  font-size: 20px;
+}
+
+.wrapper .mssgBlock .chatContainer .human .avatar {
+  background: #F1F0F0 url(../images/ava_user.png) no-repeat center center/contain;
+}
+
+.wrapper .mssgBlock .chatContainer .human .text {
+  background: #F9C35B;
+}
+
+.wrapper .mssgBlock .chatContainer .bot .avatar {
+  background: #F1F0F0 url(../images/ava_bot.png) no-repeat center center/contain;
+}
+
+.wrapper .mssgBlock .chatContainer .bot .text {
+  background: #F1F0F0;
+}
+
+.wrapper .mssgBlock .mssg {
+  height: 64px;
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  left: 40px;
+}
+
+.wrapper .mssgBlock .mssg textarea {
+  width: 100%;
+  height: 100%;
+  resize: none;
+  padding: 20px 75px 20px 30px;
+  font-size: 20px;
+  color: #929292;
+  border-radius: 32px;
+  background-color: #F3F3F3;
+}
+
+.wrapper .mssgBlock .mssg .button {
+  position: absolute;
+  right: 0px;
+  top: 0;
+  bottom: 0;
+  padding: 0 30px;
+  background-color: #282828;
+}
+
+.wrapper .mssgBlock .mssg .button .cover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #F3F3F3 url(../images/button_passive.svg) no-repeat center left/35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 0 32px 32px 0;
+}
+
+.wrapper .mssgBlock .mssg .active {
+  cursor: pointer;
+}
+
+.wrapper .mssgBlock .mssg .active .cover {
+  background: white url(../images/button_active.svg) no-repeat center left/35px;
+}
+
+.wrapper .mssgBlock .writes:before {
+  content: '';
+  position: absolute;
+  top: -19px;
+  left: 30px;
+  width: 100%;
+  height: 15px;
+  font-size: 12px;
+  color: #979797;
+}
+
+.wrapper .mssgBlock .writes:after {
+  content: '';
+  position: absolute;
+  top: -14px;
+  left: 40px;
+  width: 100%;
+  height: 7px;
+  background: url(../images/loading.png) no-repeat left center/contain;
+}
+
+@media (max-width: 700px) {
+  .wrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    max-width: 700px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0;
+  }
+  .wrapper h1 {
+    font-size: 32px;
+    line-height: 50px;
+    padding: 0 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .wrapper .mssgBlock {
+    max-height: 100%;
+    padding: 50px 20px 65px 20px;
+    border: none;
+    border-radius: 0;
+  }
+  .wrapper .mssgBlock .scrollBlock {
+    display: none;
+  }
+  .wrapper .mssgBlock .chatContainer {
+    padding-right: 0;
+  }
+  .wrapper .mssgBlock .mssg {
+    height: 64px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+  .wrapper .mssgBlock .mssg textarea {
+    padding: 20px 75px 20px 20px;
+    border-radius: 0;
+  }
+  .wrapper .mssgBlock .mssg .button .cover {
+    border-radius: 0;
+  }
+}
