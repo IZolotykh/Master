@@ -1,0 +1,10 @@
+#textForm {
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+.field {
+  color: blue;
+  font-style: italic;
+  font-size: 18px;
+}
