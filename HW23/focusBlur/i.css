@@ -1,0 +1,15 @@
+h1 {
+  color: grey;
+  padding: 2em 3em;
+  text-align: center;
+}
+
+#textForm {
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+.field {
+  color: blue;
+  font-style: italic;
+}
