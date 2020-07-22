@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: beige;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.cube {
+    width: 600px;
+    height: 300px;
+    background-color: lightblue;
+    outline: 2px dotted burlywood;
+}
+
+p {
+    text-align: center;
+    color: red;
+    font-size: 24px;
+}
+
+button {
+    background-color: red;
+    font-size: 14;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
